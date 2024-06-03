@@ -1,0 +1,11 @@
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\bin\Debug\BudgetBuddy.exe.config
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\bin\Debug\BudgetBuddy.exe
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\bin\Debug\BudgetBuddy.pdb
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.csproj.AssemblyReference.cache
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.AddTransactionForm.resources
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.MainForm.resources
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.Properties.Resources.resources
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.csproj.GenerateResource.cache
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.csproj.CoreCompileInputs.cache
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.exe
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.pdb
