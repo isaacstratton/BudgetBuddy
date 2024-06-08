@@ -179,6 +179,7 @@
             this.Controls.Add(this.txtAmount);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.dateTimePicker1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddTransactionForm";
             this.Text = "AddTransactionForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

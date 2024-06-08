@@ -49,3 +49,4 @@ C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\C
 C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\bin\Debug\System.ValueTuple.xml
 C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.LoginForm.resources
 C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBu.9DFDE833.Up2Date
+C:\Users\broke\OneDrive\Desktop\IT488-Software Product Development Using Agile\Code\BudgetBuddy\obj\Debug\BudgetBuddy.DashboardForm.resources
