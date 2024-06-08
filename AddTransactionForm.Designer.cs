@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTransactionForm));
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtAmount = new System.Windows.Forms.TextBox();
@@ -39,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dateTimePicker1
@@ -46,21 +49,21 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(203, 114);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(443, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(418, 20);
             this.dateTimePicker1.TabIndex = 0;
             // 
             // txtDescription
             // 
             this.txtDescription.Location = new System.Drawing.Point(203, 309);
             this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(443, 20);
+            this.txtDescription.Size = new System.Drawing.Size(418, 20);
             this.txtDescription.TabIndex = 1;
             // 
             // txtAmount
             // 
             this.txtAmount.Location = new System.Drawing.Point(203, 244);
             this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(443, 20);
+            this.txtAmount.Size = new System.Drawing.Size(418, 20);
             this.txtAmount.TabIndex = 2;
             // 
             // cmbCategory
@@ -75,7 +78,7 @@
             "Entertainment"});
             this.cmbCategory.Location = new System.Drawing.Point(203, 171);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(443, 21);
+            this.cmbCategory.Size = new System.Drawing.Size(418, 21);
             this.cmbCategory.TabIndex = 3;
             // 
             // btnSave
@@ -150,11 +153,21 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "BudgetBuddy";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(627, 280);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(161, 158);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // AddTransactionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -168,6 +181,7 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "AddTransactionForm";
             this.Text = "AddTransactionForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +200,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

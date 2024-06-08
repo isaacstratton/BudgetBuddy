@@ -17,14 +17,26 @@ namespace BudgetBuddy
         public MainForm()
         {
             InitializeComponent();
+
+            // Show Login Form
+            using (var loginForm = new LoginForm())
+            {
+                if (loginForm.ShowDialog() != DialogResult.OK)
+                {
+                    // If login fails or is cancelled, close the application
+                    this.Close();
+                    return;
+                }
+            }
+
             transactions = new List<Transaction>();
             LoadTransactions();
         }
 
         private void LoadTransactions()
         {
-            dataGridView2.DataSource = null;  // Clear the current data source
-            dataGridView2.DataSource = transactions;  // Set the new data source
+            dataGridView2.DataSource = null;
+            dataGridView2.DataSource = transactions;
         }
 
         private void btnAddTransaction1_Click(object sender, EventArgs e)
@@ -41,9 +53,9 @@ namespace BudgetBuddy
     }
 }
 
-     
 
-        
+
+
 
 
 

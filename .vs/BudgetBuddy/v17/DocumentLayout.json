@@ -3,15 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|c:\\users\\broke\\onedrive\\desktop\\it488-software product development using agile\\code\\budgetbuddy\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\addtransactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|c:\\users\\broke\\onedrive\\desktop\\it488-software product development using agile\\code\\budgetbuddy\\addtransactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:addtransactionform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -25,6 +17,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\passwordutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:passwordutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D33D272-3180-4E36-995E-0221B4C2E969}|BudgetBuddy.csproj|solutionrelative:transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,70 +54,130 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
+              "Title": "PasswordUtility.cs",
+              "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\PasswordUtility.cs",
+              "RelativeDocumentMoniker": "PasswordUtility.cs",
+              "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\PasswordUtility.cs",
+              "RelativeToolTip": "PasswordUtility.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T04:29:09.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAADgvycAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:32:11.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:13:48.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\User.cs",
+              "RelativeDocumentMoniker": "User.cs",
+              "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\User.cs",
+              "RelativeToolTip": "User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:11:56.055Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-06-05T03:09:12.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:28:01.859Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-06-03T08:28:01.859Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "MainForm.Designer.cs",
               "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.Designer.cs",
               "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACcAAAAcAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowCcAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T08:27:19.113Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\MainForm.cs",
               "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T08:11:58.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AddTransactionForm.cs",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\AddTransactionForm.cs",
               "RelativeDocumentMoniker": "AddTransactionForm.cs",
               "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\AddTransactionForm.cs",
               "RelativeToolTip": "AddTransactionForm.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAIA2wBoAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:54:18.926Z"
+              "WhenOpened": "2024-06-03T07:54:18.926Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AddTransactionForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\AddTransactionForm.cs",
               "RelativeDocumentMoniker": "AddTransactionForm.cs",
               "ToolTip": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\AddTransactionForm.cs [Design]",
               "RelativeToolTip": "AddTransactionForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T07:44:16.271Z"
+              "WhenOpened": "2024-06-03T07:44:16.271Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\broke\\OneDrive\\Desktop\\IT488-Software Product Development Using Agile\\Code\\BudgetBuddy\\Transaction.cs",
               "RelativeDocumentMoniker": "Transaction.cs",
