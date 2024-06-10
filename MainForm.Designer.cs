@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btnAddTransaction1 = new System.Windows.Forms.Button();
             this.DateColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CategoryColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.AmountColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescriptionColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnAddTransaction1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,20 +47,9 @@
             this.DescriptionColumn});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView2.Name = "dataGridView1";
+            this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(800, 450);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // btnAddTransaction1
-            // 
-            this.btnAddTransaction1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddTransaction1.Location = new System.Drawing.Point(668, 398);
-            this.btnAddTransaction1.Name = "btnAddTransaction1";
-            this.btnAddTransaction1.Size = new System.Drawing.Size(120, 40);
-            this.btnAddTransaction1.TabIndex = 1;
-            this.btnAddTransaction1.Text = "Add Transaction";
-            this.btnAddTransaction1.UseVisualStyleBackColor = true;
-            this.btnAddTransaction1.Click += new System.EventHandler(this.btnAddTransaction1_Click);
             // 
             // DateColumn
             // 
@@ -89,11 +78,23 @@
             this.DescriptionColumn.Name = "DescriptionColumn";
             this.DescriptionColumn.Width = 250;
             // 
+            // btnAddTransaction1
+            // 
+            this.btnAddTransaction1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddTransaction1.Location = new System.Drawing.Point(668, 398);
+            this.btnAddTransaction1.Name = "btnAddTransaction1";
+            this.btnAddTransaction1.Size = new System.Drawing.Size(120, 40);
+            this.btnAddTransaction1.TabIndex = 1;
+            this.btnAddTransaction1.Text = "Add Transaction";
+            this.btnAddTransaction1.UseVisualStyleBackColor = true;
+            this.btnAddTransaction1.Click += new System.EventHandler(this.btnAddTransaction1_Click);
+            // 
             // MainForm
             // 
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnAddTransaction1);
             this.Controls.Add(this.dataGridView2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainForm";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
