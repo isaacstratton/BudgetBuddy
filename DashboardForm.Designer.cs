@@ -39,6 +39,7 @@
             this.txtNetBalance = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,15 +52,17 @@
             this.lblIncome.Size = new System.Drawing.Size(94, 29);
             this.lblIncome.TabIndex = 0;
             this.lblIncome.Text = "Income";
-            this.lblIncome.Click += new System.EventHandler(this.lblIncome_Click);
             // 
             // txtIncome
             // 
-            this.txtIncome.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIncome.Location = new System.Drawing.Point(258, 156);
+            this.txtIncome.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txtIncome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtIncome.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIncome.Location = new System.Drawing.Point(194, 156);
             this.txtIncome.Name = "txtIncome";
-            this.txtIncome.Size = new System.Drawing.Size(100, 36);
+            this.txtIncome.Size = new System.Drawing.Size(200, 23);
             this.txtIncome.TabIndex = 1;
+            this.txtIncome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAddIncome
             // 
@@ -84,16 +87,19 @@
             // 
             // txtExpenses
             // 
-            this.txtExpenses.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExpenses.Location = new System.Drawing.Point(258, 247);
+            this.txtExpenses.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.txtExpenses.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtExpenses.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtExpenses.Location = new System.Drawing.Point(194, 247);
             this.txtExpenses.Name = "txtExpenses";
-            this.txtExpenses.Size = new System.Drawing.Size(100, 36);
+            this.txtExpenses.Size = new System.Drawing.Size(200, 23);
             this.txtExpenses.TabIndex = 4;
+            this.txtExpenses.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnAddExpenses
             // 
             this.btnAddExpenses.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddExpenses.Location = new System.Drawing.Point(409, 247);
+            this.btnAddExpenses.Location = new System.Drawing.Point(409, 243);
             this.btnAddExpenses.Name = "btnAddExpenses";
             this.btnAddExpenses.Size = new System.Drawing.Size(188, 43);
             this.btnAddExpenses.TabIndex = 5;
@@ -113,13 +119,14 @@
             // 
             // txtNetBalance
             // 
-            this.txtNetBalance.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNetBalance.Location = new System.Drawing.Point(258, 329);
+            this.txtNetBalance.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNetBalance.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNetBalance.Location = new System.Drawing.Point(194, 329);
             this.txtNetBalance.Name = "txtNetBalance";
             this.txtNetBalance.ReadOnly = true;
-            this.txtNetBalance.Size = new System.Drawing.Size(100, 36);
+            this.txtNetBalance.Size = new System.Drawing.Size(200, 23);
             this.txtNetBalance.TabIndex = 7;
-            this.txtNetBalance.TextChanged += new System.EventHandler(this.txtNetBalance_TextChanged);
+            this.txtNetBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox1
             // 
@@ -141,11 +148,23 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Welcome to BudgetBuddy";
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(409, 322);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(188, 43);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtNetBalance);
@@ -178,5 +197,6 @@
         private System.Windows.Forms.TextBox txtNetBalance;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnClose;
     }
 }
