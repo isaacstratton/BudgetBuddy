@@ -111,6 +111,7 @@
     <Compile Include="AddTransactionForm.Designer.cs">
       <DependentUpon>AddTransactionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller.cs" />
     <Compile Include="DashboardForm.cs">
       <SubType>Form</SubType>
     </Compile>
