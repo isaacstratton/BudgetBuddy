@@ -42,11 +42,11 @@ namespace BudgetBuddy
         private void btnAddExpenses_Click(object sender, EventArgs e)
         {
             ExpenseForm expenseForm = new ExpenseForm(username, controller);
-            expenseForm.FormClosed += ExpenseForm_FormClosed;
+            expenseForm.FormClosed += ExpensesForm_FormClosed;
             expenseForm.ShowDialog();
         }
 
-        private void ExpenseForm_FormClosed(object sender, FormClosedEventArgs e)
+        private void ExpensesForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             LoadData();
         }
