@@ -67,5 +67,6 @@ namespace BudgetBuddy
                 this.Close();
             }
 
+        }
     }
-    }
+
