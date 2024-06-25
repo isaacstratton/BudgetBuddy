@@ -1,6 +1,6 @@
 ﻿namespace BudgetBuddy
 {
-    partial class ExpensesForm
+    partial class ExpenseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpensesForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpenseForm));
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,9 +81,10 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(12, 233);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 31);
+            this.label3.Size = new System.Drawing.Size(113, 31);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Category";
+            this.label3.Text = "Amount";
+
             // 
             // label4
             // 
@@ -140,6 +141,7 @@
             this.btnSave.TabIndex = 20;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnCancel
             // 
@@ -159,7 +161,7 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
-            // ExpensesForm
+            // ExpenseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -177,7 +179,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "ExpensesForm";
+            this.Name = "ExpenseForm";
             this.Text = "ExpensesForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
