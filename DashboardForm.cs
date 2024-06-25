@@ -27,17 +27,29 @@ namespace BudgetBuddy
             txtExpenses.Text = expenses.ToString("C");
             txtNetBalance.Text = netBalance.ToString("C");
         }
-
         private void btnAddIncome_Click(object sender, EventArgs e)
         {
-            // ToDo: add income button click
+            AddTransactionForm addTransactionForm = new AddTransactionForm(username, controller);
+            addTransactionForm.FormClosed += AddTransactionForm_FormClosed;
+            addTransactionForm.ShowDialog();
+        }
+
+        private void AddTransactionForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoadData();
         }
 
         private void btnAddExpenses_Click(object sender, EventArgs e)
         {
-            // ToDo: add expenses button click
+            ExpenseForm expenseForm = new ExpenseForm(username, controller);
+            expenseForm.FormClosed += ExpenseForm_FormClosed;
+            expenseForm.ShowDialog();
         }
 
+        private void ExpenseForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoadData();
+        }
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Close the entire application
