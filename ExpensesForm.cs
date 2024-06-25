@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace BudgetBuddy
 {
-    public partial class ExpensesForm : Form
+    public partial class ExpenseForm : Form
     {
-        public ExpensesForm()
+        private Controller controller;
+        private string username;
+
+        public ExpenseForm(string username, Controller controller)
         {
             InitializeComponent();
+            this.controller = controller;
+            this.username = username;
+            LoadExpenseCategories();
         }
-    }
+        
 }
