@@ -42,16 +42,15 @@ namespace BudgetBuddy
         {
             DateTime transactionDate = dateTimePicker1.Value;
             int categoryId = (int)cmbCategory.SelectedValue;
-            decimal amount;
-            if (!decimal.TryParse(txtAmount.Text, out amount))
+            if (!decimal.TryParse(txtAmount.Text, out decimal amount))
             {
                 MessageBox.Show("Please enter a valid amount.");
                 return;
             }
             string description = txtDescription.Text;
 
-            bool incomeAdded = controller.AddIncome(transactionDate, categoryId, amount, description);
-            if (incomeAdded)
+            bool success = controller.AddIncome(transactionDate, categoryId, amount, description, username);
+            if (success)
             {
                 MessageBox.Show("Income added successfully!");
                 this.Close();
