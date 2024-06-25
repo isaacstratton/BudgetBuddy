@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace BudgetBuddy
 {
@@ -115,7 +117,7 @@ namespace BudgetBuddy
 
             try
             {
-                using (cnn = new SqlConnection(connectionString))
+                using (SqlConnection cnn = new SqlConnection(connectionString))
                 {
                     cnn.Open();
                     string query = "SELECT category_id, category_name FROM categories WHERE category_type = @categoryType";
@@ -140,24 +142,26 @@ namespace BudgetBuddy
         //Method to add income to the database
         public bool AddIncome(DateTime transactionDate, int categoryId, decimal amount, string description, string username)
         {
-            bool incomeAdded = false;
+            bool isSuccess = false;
+
             try
             {
                 using (SqlConnection cnn = new SqlConnection(connectionString))
                 {
                     cnn.Open();
-                    string query = "INSERT INTO income (income_source, net_income_amt, transaction_date, user_id, category_id) " +
-                                   "VALUES (@description, @amount, @transactionDate, (SELECT user_id FROM users WHERE username = @username), @categoryId)";
+                    string query = "INSERT INTO income (transaction_date, category_id, net_income_amt, income_source, user_id) " +
+                                   "VALUES (@transaction_date, @category_id, @amount, @description, " +
+                                   "(SELECT user_id FROM users WHERE username = @username))";
                     using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
-                        cmd.Parameters.AddWithValue("@description", description);
+                        cmd.Parameters.AddWithValue("@transaction_date", transactionDate);
+                        cmd.Parameters.AddWithValue("@category_id", categoryId);
                         cmd.Parameters.AddWithValue("@amount", amount);
-                        cmd.Parameters.AddWithValue("@transactionDate", transactionDate);
+                        cmd.Parameters.AddWithValue("@description", description);
                         cmd.Parameters.AddWithValue("@username", username);
-                        cmd.Parameters.AddWithValue("@categoryId", categoryId);
 
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        incomeAdded = rowsAffected > 0;
+                        int result = cmd.ExecuteNonQuery();
+                        isSuccess = result > 0;
                     }
                 }
             }
@@ -165,7 +169,8 @@ namespace BudgetBuddy
             {
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
-            return incomeAdded;
+
+            return isSuccess;
         }
 
         //Method to add expenses to the database
