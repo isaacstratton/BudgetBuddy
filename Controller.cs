@@ -107,5 +107,97 @@ namespace BudgetBuddy
         {
             return income - expenses;
         }
+
+        //Method to load categories to the forms
+        public DataTable LoadCategories(string categoryType)
+        {
+            DataTable categories = new DataTable();
+
+            try
+            {
+                using (cnn = new SqlConnection(connectionString))
+                {
+                    cnn.Open();
+                    string query = "SELECT category_id, category_name FROM categories WHERE category_type = @categoryType";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@categoryType", categoryType);
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            adapter.Fill(categories);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+            return categories;
+        }
+
+        //Method to add income to the database
+        public bool AddIncome(DateTime transactionDate, int categoryId, decimal amount, string description, string username)
+        {
+            bool incomeAdded = false;
+            try
+            {
+                using (SqlConnection cnn = new SqlConnection(connectionString))
+                {
+                    cnn.Open();
+                    string query = "INSERT INTO income (income_source, net_income_amt, transaction_date, user_id, category_id) " +
+                                   "VALUES (@description, @amount, @transactionDate, (SELECT user_id FROM users WHERE username = @username), @categoryId)";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@description", description);
+                        cmd.Parameters.AddWithValue("@amount", amount);
+                        cmd.Parameters.AddWithValue("@transactionDate", transactionDate);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@categoryId", categoryId);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        incomeAdded = rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            return incomeAdded;
+        }
+
+        //Method to add expenses to the database
+        public bool AddExpense(DateTime transactionDate, int categoryId, decimal amount, string description, string username)
+        {
+            bool expenseAdded = false;
+            try
+                {
+                    using (SqlConnection cnn = new SqlConnection(connectionString))
+                    {
+                        cnn.Open();
+                        string query = "INSERT INTO expenses (transaction_date, amt_spent, expense_note, user_id, category_id) " +
+                                       "VALUES (@transactionDate, @amount, @description, (SELECT user_id FROM users WHERE username = @username), @categoryId)";
+                        using (SqlCommand cmd = new SqlCommand(query, cnn))
+                        {
+                            cmd.Parameters.AddWithValue("@transactionDate", transactionDate);
+                            cmd.Parameters.AddWithValue("@amount", amount);
+                            cmd.Parameters.AddWithValue("@description", description);
+                            cmd.Parameters.AddWithValue("@username", username);
+                            cmd.Parameters.AddWithValue("@categoryId", categoryId);
+
+                            int rowsAffected = cmd.ExecuteNonQuery();
+                            expenseAdded = rowsAffected > 0;
+                        }
+                    }
+                }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+            return expenseAdded;
+        }
+
     }
 }
