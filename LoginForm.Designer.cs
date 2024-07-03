@@ -37,6 +37,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +78,7 @@
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(135, 310);
+            this.btnLogin.Location = new System.Drawing.Point(67, 310);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(155, 63);
             this.btnLogin.TabIndex = 6;
@@ -108,7 +109,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(335, 310);
+            this.btnClose.Location = new System.Drawing.Point(422, 310);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(155, 63);
             this.btnClose.TabIndex = 12;
@@ -116,11 +117,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnSignUp
+            // 
+            this.btnSignUp.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold);
+            this.btnSignUp.Location = new System.Drawing.Point(244, 310);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(155, 63);
+            this.btnSignUp.TabIndex = 13;
+            this.btnSignUp.Text = "Sign UP";
+            this.btnSignUp.UseVisualStyleBackColor = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
@@ -148,5 +160,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSignUp;
     }
 }
