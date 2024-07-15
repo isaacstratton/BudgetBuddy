@@ -40,6 +40,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblFinanceHistory = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +49,7 @@
             // 
             this.lblIncome.AutoSize = true;
             this.lblIncome.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIncome.Location = new System.Drawing.Point(94, 156);
+            this.lblIncome.Location = new System.Drawing.Point(38, 149);
             this.lblIncome.Name = "lblIncome";
             this.lblIncome.Size = new System.Drawing.Size(94, 29);
             this.lblIncome.TabIndex = 0;
@@ -79,7 +81,7 @@
             // 
             this.lblExpenses.AutoSize = true;
             this.lblExpenses.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExpenses.Location = new System.Drawing.Point(75, 247);
+            this.lblExpenses.Location = new System.Drawing.Point(38, 218);
             this.lblExpenses.Name = "lblExpenses";
             this.lblExpenses.Size = new System.Drawing.Size(113, 29);
             this.lblExpenses.TabIndex = 3;
@@ -99,7 +101,7 @@
             // btnAddExpenses
             // 
             this.btnAddExpenses.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddExpenses.Location = new System.Drawing.Point(409, 243);
+            this.btnAddExpenses.Location = new System.Drawing.Point(409, 218);
             this.btnAddExpenses.Name = "btnAddExpenses";
             this.btnAddExpenses.Size = new System.Drawing.Size(188, 43);
             this.btnAddExpenses.TabIndex = 5;
@@ -111,7 +113,7 @@
             // 
             this.lblNetBalance.AutoSize = true;
             this.lblNetBalance.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNetBalance.Location = new System.Drawing.Point(38, 329);
+            this.lblNetBalance.Location = new System.Drawing.Point(38, 294);
             this.lblNetBalance.Name = "lblNetBalance";
             this.lblNetBalance.Size = new System.Drawing.Size(150, 29);
             this.lblNetBalance.TabIndex = 6;
@@ -151,7 +153,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(409, 322);
+            this.btnClose.Location = new System.Drawing.Point(409, 294);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(188, 43);
             this.btnClose.TabIndex = 13;
@@ -159,11 +161,33 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // lblFinanceHistory
+            // 
+            this.lblFinanceHistory.AutoSize = true;
+            this.lblFinanceHistory.Font = new System.Drawing.Font("Modern No. 20", 20.25F);
+            this.lblFinanceHistory.Location = new System.Drawing.Point(38, 368);
+            this.lblFinanceHistory.Name = "lblFinanceHistory";
+            this.lblFinanceHistory.Size = new System.Drawing.Size(195, 29);
+            this.lblFinanceHistory.TabIndex = 14;
+            this.lblFinanceHistory.Text = "Finance History";
+            // 
+            // btnView
+            // 
+            this.btnView.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold);
+            this.btnView.Location = new System.Drawing.Point(409, 373);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(188, 43);
+            this.btnView.TabIndex = 15;
+            this.btnView.Text = "View";
+            this.btnView.UseVisualStyleBackColor = true;
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnView);
+            this.Controls.Add(this.lblFinanceHistory);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
@@ -175,7 +199,7 @@
             this.Controls.Add(this.btnAddIncome);
             this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.lblIncome);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BudgetBuddy Dashboard";
@@ -198,5 +222,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblFinanceHistory;
+        private System.Windows.Forms.Button btnView;
     }
 }

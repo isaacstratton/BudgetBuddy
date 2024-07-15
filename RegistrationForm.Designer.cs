@@ -154,7 +154,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "RegistrationForm";
             this.Text = "RegistrationForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
