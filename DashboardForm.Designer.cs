@@ -180,6 +180,7 @@
             this.btnView.TabIndex = 15;
             this.btnView.Text = "View";
             this.btnView.UseVisualStyleBackColor = true;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
             // 
             // DashboardForm
             // 
@@ -200,6 +201,7 @@
             this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.lblIncome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashboardForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BudgetBuddy Dashboard";
