@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
@@ -35,7 +35,7 @@ namespace BudgetBuddy
                     {
                         cmd.Parameters.AddWithValue("@username", username);
                         cmd.Parameters.AddWithValue("@password", password);
-                        
+
                         var result = cmd.ExecuteScalar();
                         if (result != null)
                         {
@@ -53,7 +53,52 @@ namespace BudgetBuddy
                 return false;
             }
         }
+        public bool RegisterUser(string firstName, string lastName, string email, string username, string password)
+        {
+            bool isSuccess = false;
 
+            try
+            {
+                using (SqlConnection cnn = new SqlConnection(connectionString))
+                {
+                    cnn.Open();
+
+                    // Check if username or email already exists
+                    string checkQuery = "SELECT COUNT(*) FROM users WHERE username = @username OR email = @email";
+                    using (SqlCommand checkCmd = new SqlCommand(checkQuery, cnn))
+                    {
+                        checkCmd.Parameters.AddWithValue("@username", username);
+                        checkCmd.Parameters.AddWithValue("@email", email);
+                        int count = (int)checkCmd.ExecuteScalar();
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Username or email already exists.");
+                            return false;
+                        }
+                    }
+
+                    string query = "INSERT INTO users (first_name, last_name, email, username, password) VALUES (@first_name, @last_name, @email, @username, @password)";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
+                    {
+                        cmd.Parameters.AddWithValue("@first_name", firstName);
+                        cmd.Parameters.AddWithValue("@last_name", lastName);
+                        cmd.Parameters.AddWithValue("@email", email);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@password", password);
+
+                        int result = cmd.ExecuteNonQuery();
+                        isSuccess = result > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
+
+            return isSuccess;
+        }
         // Method to load user's income
         public decimal LoadIncome()
         {
@@ -178,25 +223,25 @@ namespace BudgetBuddy
         {
             bool expenseAdded = false;
             try
+            {
+                using (SqlConnection cnn = new SqlConnection(connectionString))
                 {
-                    using (SqlConnection cnn = new SqlConnection(connectionString))
+                    cnn.Open();
+                    string query = "INSERT INTO expenses (transaction_date, amt_spent, expense_note, user_id, category_id) " +
+                                   "VALUES (@transactionDate, @amount, @description, (SELECT user_id FROM users WHERE username = @username), @categoryId)";
+                    using (SqlCommand cmd = new SqlCommand(query, cnn))
                     {
-                        cnn.Open();
-                        string query = "INSERT INTO expenses (transaction_date, amt_spent, expense_note, user_id, category_id) " +
-                                       "VALUES (@transactionDate, @amount, @description, (SELECT user_id FROM users WHERE username = @username), @categoryId)";
-                        using (SqlCommand cmd = new SqlCommand(query, cnn))
-                        {
-                            cmd.Parameters.AddWithValue("@transactionDate", transactionDate);
-                            cmd.Parameters.AddWithValue("@amount", amount);
-                            cmd.Parameters.AddWithValue("@description", description);
-                            cmd.Parameters.AddWithValue("@username", username);
-                            cmd.Parameters.AddWithValue("@categoryId", categoryId);
+                        cmd.Parameters.AddWithValue("@transactionDate", transactionDate);
+                        cmd.Parameters.AddWithValue("@amount", amount);
+                        cmd.Parameters.AddWithValue("@description", description);
+                        cmd.Parameters.AddWithValue("@username", username);
+                        cmd.Parameters.AddWithValue("@categoryId", categoryId);
 
-                            int rowsAffected = cmd.ExecuteNonQuery();
-                            expenseAdded = rowsAffected > 0;
-                        }
+                        int rowsAffected = cmd.ExecuteNonQuery();
+                        expenseAdded = rowsAffected > 0;
                     }
                 }
+            }
             catch (Exception ex)
             {
                 MessageBox.Show("An error occurred: " + ex.Message);

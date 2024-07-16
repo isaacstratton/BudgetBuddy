@@ -180,8 +180,9 @@
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.dateTimePicker1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddTransactionForm";
-            this.Text = "AddTransactionForm";
+            this.Text = "Add Transaction";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BudgetBuddy
 {
@@ -13,7 +14,7 @@ namespace BudgetBuddy
             controller = new Controller(); // Ensure the Controller is initialized here
         }
 
-  
+
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -37,6 +38,14 @@ namespace BudgetBuddy
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Close the entire application
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrationForm registrationForm = new RegistrationForm(controller, this);
+            registrationForm.Show();
+         
         }
     }
 }

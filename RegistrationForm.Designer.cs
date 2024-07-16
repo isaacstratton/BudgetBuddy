@@ -1,4 +1,4 @@
-﻿namespace BudgetBuddy
+namespace BudgetBuddy
 {
     partial class RegistrationForm
     {
@@ -30,15 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBoxFirstName = new System.Windows.Forms.TextBox();
+            this.txtBoxEmail = new System.Windows.Forms.TextBox();
+            this.txtBoxPassword = new System.Windows.Forms.TextBox();
+            this.txtBoxPasswordConfirm = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.checkBoxTerms = new System.Windows.Forms.CheckBox();
+            this.txtBoxUsername = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtBoxLastName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,41 +55,41 @@
             this.label5.Text = "Registration Form";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox1
+            // txtBoxFirstName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(406, 26);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.Text = "Name";
+            this.txtBoxFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxFirstName.Location = new System.Drawing.Point(202, 104);
+            this.txtBoxFirstName.Name = "txtBoxFirstName";
+            this.txtBoxFirstName.Size = new System.Drawing.Size(188, 26);
+            this.txtBoxFirstName.TabIndex = 13;
+            this.txtBoxFirstName.Text = "First Name";
             // 
-            // textBox2
+            // txtBoxEmail
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(202, 156);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(406, 26);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.Text = "Email";
+            this.txtBoxEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxEmail.Location = new System.Drawing.Point(202, 156);
+            this.txtBoxEmail.Name = "txtBoxEmail";
+            this.txtBoxEmail.Size = new System.Drawing.Size(406, 26);
+            this.txtBoxEmail.TabIndex = 14;
+            this.txtBoxEmail.Text = "Email";
             // 
-            // textBox3
+            // txtBoxPassword
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(202, 255);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(406, 26);
-            this.textBox3.TabIndex = 15;
-            this.textBox3.Text = "Password";
+            this.txtBoxPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPassword.Location = new System.Drawing.Point(202, 255);
+            this.txtBoxPassword.Name = "txtBoxPassword";
+            this.txtBoxPassword.Size = new System.Drawing.Size(406, 26);
+            this.txtBoxPassword.TabIndex = 15;
+            this.txtBoxPassword.Text = "Password";
             // 
-            // textBox4
+            // txtBoxPasswordConfirm
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(202, 296);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(406, 26);
-            this.textBox4.TabIndex = 16;
-            this.textBox4.Text = "Confirm Password";
+            this.txtBoxPasswordConfirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPasswordConfirm.Location = new System.Drawing.Point(202, 296);
+            this.txtBoxPasswordConfirm.Name = "txtBoxPasswordConfirm";
+            this.txtBoxPasswordConfirm.Size = new System.Drawing.Size(406, 26);
+            this.txtBoxPasswordConfirm.TabIndex = 16;
+            this.txtBoxPasswordConfirm.Text = "Confirm Password";
             // 
             // button1
             // 
@@ -99,26 +100,27 @@
             this.button1.TabIndex = 17;
             this.button1.Text = "Sign Up";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox1
+            // checkBoxTerms
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(202, 337);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(299, 24);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "I agree with terms and conditions.";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxTerms.AutoSize = true;
+            this.checkBoxTerms.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxTerms.Location = new System.Drawing.Point(202, 337);
+            this.checkBoxTerms.Name = "checkBoxTerms";
+            this.checkBoxTerms.Size = new System.Drawing.Size(299, 24);
+            this.checkBoxTerms.TabIndex = 18;
+            this.checkBoxTerms.Text = "I agree with terms and conditions.";
+            this.checkBoxTerms.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // txtBoxUsername
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox5.Location = new System.Drawing.Point(202, 208);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(406, 26);
-            this.textBox5.TabIndex = 19;
-            this.textBox5.Text = "UserName ";
+            this.txtBoxUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtBoxUsername.Location = new System.Drawing.Point(202, 208);
+            this.txtBoxUsername.Name = "txtBoxUsername";
+            this.txtBoxUsername.Size = new System.Drawing.Size(406, 26);
+            this.txtBoxUsername.TabIndex = 19;
+            this.txtBoxUsername.Text = "UserName ";
             // 
             // button2
             // 
@@ -129,6 +131,7 @@
             this.button2.TabIndex = 20;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -139,24 +142,35 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // txtBoxLastName
+            // 
+            this.txtBoxLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxLastName.Location = new System.Drawing.Point(420, 104);
+            this.txtBoxLastName.Name = "txtBoxLastName";
+            this.txtBoxLastName.Size = new System.Drawing.Size(188, 26);
+            this.txtBoxLastName.TabIndex = 22;
+            this.txtBoxLastName.Text = "Last Name";
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtBoxLastName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.txtBoxUsername);
+            this.Controls.Add(this.checkBoxTerms);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBoxPasswordConfirm);
+            this.Controls.Add(this.txtBoxPassword);
+            this.Controls.Add(this.txtBoxEmail);
+            this.Controls.Add(this.txtBoxFirstName);
             this.Controls.Add(this.label5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RegistrationForm";
-            this.Text = "RegistrationForm";
+            this.Text = "New User Registration";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -166,14 +180,15 @@
         #endregion
 
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBoxFirstName;
+        private System.Windows.Forms.TextBox txtBoxEmail;
+        private System.Windows.Forms.TextBox txtBoxPassword;
+        private System.Windows.Forms.TextBox txtBoxPasswordConfirm;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.CheckBox checkBoxTerms;
+        private System.Windows.Forms.TextBox txtBoxUsername;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtBoxLastName;
     }
 }
