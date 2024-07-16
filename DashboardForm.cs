@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 namespace BudgetBuddy
@@ -53,6 +53,11 @@ namespace BudgetBuddy
         private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit(); // Close the entire application
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
