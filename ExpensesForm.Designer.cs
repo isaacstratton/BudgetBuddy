@@ -1,4 +1,4 @@
-﻿namespace BudgetBuddy
+namespace BudgetBuddy
 {
     partial class ExpenseForm
     {
@@ -84,7 +84,6 @@
             this.label3.Size = new System.Drawing.Size(113, 31);
             this.label3.TabIndex = 14;
             this.label3.Text = "Amount";
-
             // 
             // label4
             // 
@@ -151,6 +150,7 @@
             this.btnCancel.TabIndex = 21;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // pictureBox1
             // 
@@ -178,9 +178,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ExpenseForm";
-            this.Text = "ExpensesForm";
+            this.Text = "Add Expense";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
